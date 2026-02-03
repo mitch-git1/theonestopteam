@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon
+    id="service.the.playback.watcher"
+    name="The Playback Watcher"
+    version="0.1.0"
+    provider-name="The One Stop Team">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension
+        point="xbmc.service"
+        library="service.py"
+        start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+
+            <screenshot>resources/media/screenshot-01-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02-settings.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03-settings.jpg</screenshot>
+        </assets>
+
+        <summary lang="en_GB">
+            Ask if you're still watching during binge playback
+        </summary>
+
+        <description lang="en_GB">
+           The Playback Watcher helps prevent endless playback during binge watching.
+After a configurable number of episodes, a prompt appears asking if you are still watching. Playback is paused while the prompt is shown.
+You can:
+- Continue watching
+- Stop playback
+- Snooze the prompt for a set time
+
+If the prompt is ignored, playback can automatically stop.
+        </description>
+
+        <platform>all</platform>
+    </extension>
+</addon>

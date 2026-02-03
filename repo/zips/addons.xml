@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<addons><addon id="repository.theonestopteam" name="the one stop repository" version="1.0.0" provider-name="the one stop team">
+    <extension point="xbmc.addon.repository" name="The One Stop Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mitch-git1/repository.theonestopteam/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mitch-git1/repository.theonestopteam/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mitch-git1/repository.theonestopteam/main/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The One Stop Repo</summary>
+        <description>Official repository for The One Stop Team. Home of EDL Skipper and other Kodi tools.</description>
+        <disclaimer />
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon><addon id="service.the.edl.skipper" name="The EDL Skipper" version="0.1.0" provider-name="The One Stop Team">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+
+    <extension point="xbmc.service" library="service.py" />
+
+    <extension point="xbmc.addon.metadata">
+        <summary>Show Skip Intro/Outro prompts or auto Skip Intro/Outro using EDL timestamps</summary>
+
+        <description>
+            Reads EDL files and shows Skip Intro / Skip Outro popups with buttons
+            or automatically skips intros and outros using EDL timestamps.
+        </description>
+
+        <platform>all</platform>
+
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+
+            <screenshot>resources/media/screenshot-01-auto-skip-intro-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02-auto-skip-outro-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03-button-skip-outro-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-04-button-skip-intro-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-05-settings.jpg</screenshot>
+            <screenshot>resources/media/screenshot-06-settings.jpg</screenshot>
+            <screenshot>resources/media/screenshot-07-settings.jpg</screenshot>
+        </assets>
+    </extension>
+</addon><addon id="service.the.playback.watcher" name="The Playback Watcher" version="0.1.0" provider-name="The One Stop Team">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+
+    <extension point="xbmc.service" library="service.py" start="startup" />
+
+    <extension point="xbmc.addon.metadata">
+
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+
+            <screenshot>resources/media/screenshot-01-popup.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02-settings.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03-settings.jpg</screenshot>
+        </assets>
+
+        <summary lang="en_GB">
+            Ask if you're still watching during binge playback
+        </summary>
+
+        <description lang="en_GB">
+           The Playback Watcher helps prevent endless playback during binge watching.
+After a configurable number of episodes, a prompt appears asking if you are still watching. Playback is paused while the prompt is shown.
+You can:
+- Continue watching
+- Stop playback
+- Snooze the prompt for a set time
+
+If the prompt is ignored, playback can automatically stop.
+        </description>
+
+        <platform>all</platform>
+    </extension>
+</addon></addons>
