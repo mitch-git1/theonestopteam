@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addons>
+
+<addon id="service.the.edl.skipper"
+       name="The EDL Skipper"
+       version="0.1.0"
+       provider-name="The One Stop Team">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.service" library="service.py"/>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Skip intros and outros using EDL files</summary>
+        <description lang="en_GB">
+Reads EDL files and allows skipping intros and outros automatically or via prompts.
+        </description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="service.the.playback.watcher"
+       name="The Playback Watcher"
+       version="0.1.0"
+       provider-name="The One Stop Team">
+
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Ask if you're still watching</summary>
+        <description lang="en_GB">
+Stops endless binge playback with configurable prompts.
+        </description>
+        <platform>all</platform>
+    </extension>
+</addon>
+
+</addons>

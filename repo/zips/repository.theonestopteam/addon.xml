@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="repository.theonestopteam" name="the one stop repository" version="1.0.0" provider-name="the one stop team">
+    <extension point="xbmc.addon.repository" name="The One Stop Repo">
+        <dir>
+            <info compressed="false">https://raw.githubusercontent.com/mitch-git1/theonestopteam/main/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mitch-git1/theonestopteam/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mitch-git1/theonestopteam/main/repo/zips/</datadir>
+        </dir>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>The One Stop Repo</summary>
+        <description>Official repository for The One Stop Team. Home of EDL Skipper and other Kodi tools.</description>
+        <disclaimer></disclaimer>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
+</addon>
