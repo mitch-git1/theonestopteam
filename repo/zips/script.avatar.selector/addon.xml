@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.avatar.selector"
+       name="Avatar Selector"
+       version="1.0.0"
+       provider-name="The One Stop Team">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0"/>
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+<extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Browse and assign Kodi profile avatars.</summary>
+        <description lang="en_GB">A visual browser to download cloud-hosted avatars and automatically apply them to your Kodi profiles.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+
+            <screenshot>resources/media/screenshot-01-start-up-message.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02-image-picker.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03-addon-start-icon.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>

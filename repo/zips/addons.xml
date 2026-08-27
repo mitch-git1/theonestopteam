@@ -1,10 +1,13 @@
-<?xml version='1.0' encoding='utf-8'?>
-<addons><addon id="repository.theonestopteam" name="the one stop repository" version="1.0.0" provider-name="the one stop team">
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="repository.theonestopteam" name="the one stop repository" version="1.0.0" provider-name="the one stop team">
+    <extension point="xbmc.addon.repository" name="The One Stop Repo">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/mitch-git1/theonestopteam/refs/heads/main/repo/zips/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/mitch-git1/theonestopteam/refs/heads/main/repo/zips/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/mitch-git1/theonestopteam/refs/heads/main/repo/zips/</datadir>
+            <info compressed="false">https://raw.githubusercontent.com/mitch-git1/theonestopteam/master/repo/zips/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/mitch-git1/theonestopteam/main/repo/zips/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/mitch-git1/theonestopteam/main/repo/zips/</datadir>
         </dir>
+    </extension>
     <extension point="xbmc.addon.metadata">
         <summary>The One Stop Repo</summary>
         <description>Official repository for The One Stop Team. Home of EDL Skipper and other Kodi tools.</description>
@@ -15,7 +18,8 @@
             <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
-</addon><addon id="service.the.edl.skipper" name="The EDL Skipper" version="0.1.0" provider-name="The One Stop Team">
+</addon>
+<addon id="service.the.edl.skipper" name="The EDL Skipper" version="0.1.0" provider-name="The One Stop Team">
 
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -46,7 +50,8 @@
             <screenshot>resources/media/screenshot-07-settings.jpg</screenshot>
         </assets>
     </extension>
-</addon><addon id="service.the.playback.watcher" name="The Playback Watcher" version="0.1.0" provider-name="The One Stop Team">
+</addon>
+<addon id="service.the.playback.watcher" name="The Playback Watcher" version="0.1.0" provider-name="The One Stop Team">
 
     <requires>
         <import addon="xbmc.python" version="3.0.0" />
@@ -82,5 +87,26 @@ If the prompt is ignored, playback can automatically stop.
 
         <platform>all</platform>
     </extension>
+</addon>
+<addon id="script.avatar.selector" name="Avatar Selector" version="1.0.0" provider-name="The One Stop Team">
+    <requires>
+        <import addon="xbmc.python" version="3.0.0" />
+    </requires>
+    <extension point="xbmc.python.script" library="main.py">
+        <provides>executable</provides>
+    </extension>
+<extension point="xbmc.addon.metadata">
+        <summary lang="en_GB">Browse and assign Kodi profile avatars.</summary>
+        <description lang="en_GB">A visual browser to download cloud-hosted avatars and automatically apply them to your Kodi profiles.</description>
+        <platform>all</platform>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
 
-</addon></addons>
+            <screenshot>resources/media/screenshot-01-start-up-message.jpg</screenshot>
+            <screenshot>resources/media/screenshot-02-image-picker.jpg</screenshot>
+            <screenshot>resources/media/screenshot-03-addon-start-icon.jpg</screenshot>
+        </assets>
+    </extension>
+</addon>
+</addons>
