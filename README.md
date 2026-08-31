@@ -41,6 +41,19 @@ Helps prevent endless binge-watching by checking if you are still watching.
 
 Designed to be unobtrusive and fully Kodi-native.
 
+### 🖼️ Avatar Selector
+**Program Addon**
+
+Customize your Kodi user profile image from a built-in selection of avatar images.
+
+**Key features:**
+- Clean GUI interface to view thumbnail previews and pick your profile avatar
+- Startup notification dialog explaining the automatic application process
+- Automatic cleanup of older avatar files to keep profile folders clean
+- Smart file-naming mechanism to bypass Kodi texture caching and apply changes upon reopen
+
+
+
 ## 🔄 Updates
 
 - All addons in this repository support **automatic updates**
